@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background: hsl(185, 75%, 39%);
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 40vw bottom 50vh, left 40vw top 50vh;
+}
+
+.container{
+    padding: 4rem 2rem;
+}
+
+.main-box{
+    position: relative;
+}
+
+.container-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 25rem;
+    margin: auto;
+    position: relative;
+}
+
+.first{
+    background: url(./images/bg-pattern-card.svg);
+    height: 10rem;
+}
+
+.second{
+    background: white;
+}
+
+.intro{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h2{
+    margin-right: .5rem;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.3rem;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+}
+
+.small-p{
+    text-align: center;
+    margin-top: .4rem;
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 2rem;
+}
+
+.popularity{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.popularity h2{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: .2rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.popularity p{
+    text-align: center;
+    font-size: .8rem;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: .1rem;
+}
+
+.img{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.img img{
+    border-radius: 50%;
+    border: .5rem solid white;
+}
+
+hr{
+    border: 1px solid rgb(235, 228, 228);
+}
+
+.attribution{
+    margin-top: -3rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+@media only screen and (min-width: 1200px){
+    body{
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
+
+    .container-box{
+        margin-top: 5rem;
+    }
+}
